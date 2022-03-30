@@ -18,6 +18,43 @@ h1, h2 {
 
 .top-bar {
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #CF2B2B;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.top-bar > h1 {
+    font-size: 44px;
+    margin-bottom: 4px;
+}
+
+.top-bar > h3 {
+    font-size: 18px;
+}
+
+.bottom-bar {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-bar > button {
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    color: #ffffff;
+    background-color: #cbcbcb;
+}
+
+.bottom-bar span {
+    display: block;
+    font-family: 'Roboto', sans-serif;
 }
