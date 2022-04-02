@@ -147,7 +147,31 @@
         </div>
         <div class="bottom-bar">
             <button><span>Selecione os 3 itens</span><span>para fechar o pedido</span></button>
-            <button class="not-visible">Fechar pedido</button>
+            <button class="not-visible" onclick="showConfirmView()">Fechar pedido</button>
+        </div>
+
+        <div class="confirm-view not-visible">
+            <div>
+                <h3>Confirme seu pedido</h3>
+                <div class="food-info">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="food-info">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="food-info">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="food-info">
+                    <p>TOTAL</p>
+                    <p></p>
+                </div>
+                <button class="btn-confirm" onclick="confirmOrder()">Tudo certo, pode pedir!</button>    
+                <button class="btn-cancel" onclick="cancelOrder()">Cancelar</button>
+            </div>
         </div>
     </div>
 

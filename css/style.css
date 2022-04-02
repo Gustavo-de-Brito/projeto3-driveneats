@@ -13,6 +13,10 @@ h1, h2 {
     font-family: 'Righteous', cursive;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top-bar {
     width: 100%;
     padding: 20px 20px;
@@ -44,10 +48,8 @@ h1, h2 {
 }
 
 .food-options {
-    height: 300px;
     display: flex;
     overflow-x: scroll;
-
 }
 
 .food-options::-webkit-scrollbar {
@@ -60,9 +62,10 @@ h1, h2 {
     justify-content: center;
     width: 180px;
     margin: 20px 16px 20px 0;
-    padding: 14px;
+    padding: 8px;
     border-radius: 20px;
     background-color: #ffffff;
+    border: 6px solid #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
@@ -86,18 +89,6 @@ h1, h2 {
 
 .food-option > div > ion-icon {
     color: #32B72F;
-}
-
-.not-visible {
-    display: none;
-}
-
-.selected-border {
-    border: 6px solid #32B72F;
-}
-
-.visible {
-    display: inline;
 }
 
 .food-option > div > h4 {
@@ -137,4 +128,73 @@ h1, h2 {
 .bottom-bar > button > span {
     display: block;
     font-size: 20px;
+}
+
+.confirm-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(250, 250, 250, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.confirm-view > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    color: #ffffff;
+    background-color: #50D074;
+    border-radius: 20px;
+    font-size: 22px;
+}
+
+.confirm-view h3 {
+    margin: 30px;
+    font-weight: bold;
+}
+
+.food-info {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.food-info:nth-child(5) {
+    font-weight: bold;
+}
+
+.confirm-view button {
+    width: 90%;
+    padding: 20px;
+    border: none;
+}
+
+.btn-confirm {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #50D074;
+    font-size: 22px;
+    border-radius: 40px;
+}
+
+.btn-cancel {
+    margin-top: 4px;
+    background-color: #50D074;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.not-visible {
+    display: none;
+}
+
+.selected-border {
+    border: 6px solid #32B72F;
 }
