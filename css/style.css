@@ -13,8 +13,8 @@ h1, h2 {
     font-family: 'Righteous', cursive;
 }
 
-a {
-    text-decoration: none;
+button {
+    border: none;
 }
 
 .top-bar {
@@ -59,14 +59,20 @@ a {
 .food-option {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 180px;
     margin: 20px 16px 20px 0;
     padding: 8px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #ffffff;
     border: 6px solid #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.food-option > img{
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
 }
 
 .food-option > h4 {
@@ -94,7 +100,7 @@ a {
 .food-option > div > h4 {
     color: #000000;
     font-size: 16px;
-    margin: 12px 0 0 0;
+    margin-top: 12px;
 }
 
 .order-option > h2 {
@@ -113,7 +119,6 @@ a {
 .bottom-bar > button {
     border-radius: 30px;
     width: 100%;
-    border: none;
     padding: 10px 0;
     color: #ffffff;
     background-color: #cbcbcb;
@@ -173,7 +178,6 @@ a {
 .confirm-view button {
     width: 90%;
     padding: 20px;
-    border: none;
 }
 
 .btn-confirm {

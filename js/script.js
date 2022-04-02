@@ -80,10 +80,10 @@ function cancelOrder() {
 }
 
 function confirmOrder() {
-    textWhatsapp = `Olá, gostaria de fazer o pedido:
-- Prato: ${plate}
-- Bebida: ${drink}
-- Sobremesa: ${dessert}
-Total: R$ ${fullPrice.replace(".", ",")}`;
+    textWhatsapp = `Olá, gostaria de fazer o pedido:\n- Prato: ${plate}\n- Bebida: ${drink}\n- Sobremesa: ${dessert}\nTotal: R$ ${fullPrice.replace(".", ",")}`;
+    const name = prompt("Qual é o seu nome?");
+    const adress = prompt("Qual é o seu endereço?");
+    textWhatsapp += `\n\n- Nome: ${name}\n- Endereço: ${adress}`;
+
     window.open(`https://wa.me/5561994344875?text=${encodeURIComponent(textWhatsapp)}`);
 }
