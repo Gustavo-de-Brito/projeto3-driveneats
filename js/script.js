@@ -21,8 +21,8 @@ function verifyThreeOrders(numOrders) {
 }
 
 function selectedItem(element) {
-    const father = element.parentNode;
-    const alredySelected = father.querySelector(".selected-border");
+    const listFood = element.parentNode;
+    const alredySelected = listFood.querySelector(".selected-border");
     
     if(alredySelected !== null) {
         alredySelected.classList.remove("selected-border");
@@ -34,7 +34,7 @@ function selectedItem(element) {
     if(alredySelected !== element) {
         element.classList.add("selected-border");
         element.querySelector("ion-icon").classList.remove("not-visible");
-        setOrder(element, father);
+        setOrder(element, listFood);
 
         numOrders++;
     }
@@ -42,18 +42,18 @@ function selectedItem(element) {
     verifyThreeOrders(numOrders);
 }
 
-function setOrder(element, elementFather) {
-    const titleType = elementFather.parentNode.querySelector("h2").innerHTML;
+function setOrder(element, listFodd) {
+    const typeFood = listFodd.parentNode.querySelector("h2").innerHTML;
     
-    if(titleType.includes("prato")) {
+    if(typeFood.includes("prato")) {
         plate = element.querySelector("h4").innerHTML;
         platePrice = element.querySelector(".food-option > div > h4").innerHTML;
 
-    } else if(titleType.includes("bebida")) {
+    } else if(typeFood.includes("bebida")) {
         drink = element.querySelector("h4").innerHTML;
         drinkPrice = element.querySelector(".food-option > div > h4").innerHTML;
 
-    } else if(titleType.includes("sobremesa")) {
+    } else if(typeFood.includes("sobremesa")) {
         dessert = element.querySelector("h4").innerHTML;
         dessertPrice = element.querySelector(".food-option > div > h4").innerHTML;
 
