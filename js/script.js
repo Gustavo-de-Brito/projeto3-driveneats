@@ -85,5 +85,5 @@ function confirmOrder() {
     const adress = prompt("Qual é o seu endereço?");
     textWhatsapp += `\n\n- Nome: ${name}\n- Endereço: ${adress}`;
 
-    window.open(`https://wa.me/5561994344875?text=${encodeURIComponent(textWhatsapp)}`);
+    window.open(`https://wa.me/5561999999999?text=${encodeURIComponent(textWhatsapp)}`);
 }
